@@ -12,7 +12,7 @@ const wish = require('./controllers/wishcontroller');
 
 // database
 const sequelize = require('./db');
-sequelize.sync();
+sequelize.sync({force:true});
 app.use(express.json());
 app.use(require('./middleware/headers'));
 

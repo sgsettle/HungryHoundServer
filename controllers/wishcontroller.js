@@ -18,9 +18,9 @@ router.post('/', (req, res) => {
   
   const wishFromRequest = {
     restaurantName: req.body.wish.restaurantName,
-    rating: req.body.wish.rating,
-    dogAmenities: req.body.wish.dogAmenities,
+    address: req.body.wish.address,
     foodType: req.body.wish.foodType,
+    comment: req.body.wish.comment,
     owner_id: req.user.id
   }
 

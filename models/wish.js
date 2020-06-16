@@ -5,15 +5,15 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        rating: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        dogAmenities: {
+        address: {
             type: DataTypes.STRING,
             allowNull: false
         },
         foodType: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        comment: {
             type: DataTypes.STRING,
             allowNull: false
         },
