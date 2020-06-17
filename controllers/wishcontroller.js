@@ -3,7 +3,11 @@ const Wish = require('../db').import('../models/wish');
 
 // GET
 router.get('/', (req, res) => {
-  Wish.findAll()
+  Wish.findAll({
+    where: {
+      owner_id: req.user.id
+    }
+  })
   .then(wish => res.status(200).json({
     wish: wish
   }))
